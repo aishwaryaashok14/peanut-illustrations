@@ -1,0 +1,6 @@
+interface:
+  display_name: "Peanut Illustrations"
+  short_description: "Turn a short prompt into one clean, deadpan-peanut concept illustration."
+  default_prompt: "Use $peanut-illustrations to draw a concept illustration for this idea:"
+policy:
+  allow_implicit_invocation: true
