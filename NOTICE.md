@@ -10,5 +10,6 @@ When redistributing or adapting this repository, please keep the `Peanut Illustr
 
 Links:
 
+- Built by Aishwarya Ashok — X: <https://x.com/aishashok14> · LinkedIn: <https://www.linkedin.com/in/aishwarya-ashok/>
 - Inspired by: <https://github.com/helloianneo/ian-xiaohei-illustrations>
 - This project: <https://github.com/aishwaryaashok14/peanut-illustrations>

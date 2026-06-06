@@ -4,6 +4,8 @@
 >
 > 16:9 · a deadpan peanut · black hand-drawn line · one warm-orange accent · Codex + Claude skill
 
+**Built by Aishwarya Ashok** — [X](https://x.com/aishashok14) · [LinkedIn](https://www.linkedin.com/in/aishwarya-ashok/)
+
 ---
 
 ## What this is
@@ -70,7 +72,27 @@ The skill uses a **single-accent duotone** style:
 
 ## Examples
 
-> Example images are being generated and will be added here. Generate your own first set with the prompts in [examples/prompts.md](examples/prompts.md).
+Each image starts from one short prompt and becomes a single composed scene — the peanut performs the action, one warm-orange accent carries the eye, and there's plenty of white space.
+
+### One idea, three formats
+
+> *"Turn one raw idea into a post, a thread, and an essay."*
+
+![A peanut feeding one raw idea through a press that outputs post, thread, and essay](examples/images/01-one-idea-three-formats.png)
+
+### Too many AI tools, too little time
+
+> *"Too many AI tools and too little time to do the actual work."*
+
+![A peanut buried beside a mountain of AI tools with only tiny time for the actual work](examples/images/02-too-many-ai-tools.png)
+
+### One holiday, all the hobbies
+
+> *"Trying to cram every hobby into one short holiday."*
+
+![A peanut sitting on a suitcase overstuffed with hobbies, overwhelmed](examples/images/03-too-many-hobbies.png)
+
+These are real outputs from the skill. Generate your own with the prompts in [examples/prompts.md](examples/prompts.md).
 
 ---
 
@@ -165,6 +187,7 @@ One prompt → one composed image. It never fans out into variations unless you 
 ├── LICENSE
 ├── NOTICE.md
 ├── examples/
+│   ├── images/
 │   └── prompts.md
 └── peanut-illustrations/
     ├── SKILL.md
@@ -197,6 +220,15 @@ The root `README`, `LICENSE`, `NOTICE`, and `examples` are GitHub-facing docs.
 - The peanut must perform the core action. If removing the peanut leaves the image fully intact, the peanut is too decorative.
 - AI image models can produce typos, hallucinated labels, style drift, or extra titles — always check after generating.
 - If text is badly garbled, reduce the number of labels and regenerate.
+
+---
+
+## Built by
+
+**Aishwarya Ashok**
+
+- X/Twitter: [@aishashok14](https://x.com/aishashok14)
+- LinkedIn: [aishwarya-ashok](https://www.linkedin.com/in/aishwarya-ashok/)
 
 ---
 
