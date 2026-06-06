@@ -40,6 +40,30 @@ These are real outputs from the skill. Each starts as one short prompt, then bec
 
 ![A peanut sitting on a suitcase overstuffed with hobbies, overwhelmed](examples/images/03-too-many-hobbies.png)
 
+### Information overload
+
+> *"Information overload."*
+
+![A peanut catching signal with a tiny sieve under a flood of inputs](examples/images/04-information-overload.png)
+
+### Shipping beats polishing
+
+> *"Shipping beats polishing."*
+
+![A peanut pushing a rough draft parcel up a ramp toward shipping](examples/images/05-shipping-beats-polishing.png)
+
+### A small loop you can repeat
+
+> *"A small loop you can repeat."*
+
+![A peanut turning a crank on a small repeatable loop machine](examples/images/06-small-loop-repeat.png)
+
+### Building trust slowly
+
+> *"Building trust slowly."*
+
+![A peanut placing one plank at a time on a bridge toward trust](examples/images/07-building-trust-slowly.png)
+
 More copy-pasteable prompts live in [examples/prompts.md](examples/prompts.md).
 
 ## Install
