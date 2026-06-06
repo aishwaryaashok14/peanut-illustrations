@@ -13,6 +13,7 @@ Like someone who has spent years on AI, product, and design tools quickly sketch
 - Mostly black hand-drawn line art: thin lines, slightly wobbly, not mechanical, not vector, not heavy outlines.
 - Lots of whitespace: the main subject fills about 40%-60% of the canvas, at least 35% stays empty, ideally one whole quiet zone.
 - A few short handwritten English labels: at most 5-8, each as short as possible (1-3 words).
+- Exact watermark on final saved images: `© peanut-illustrations-by-aish`, small and black in the bottom-right quiet margin. It is added locally after generation, not drawn by the model, and does not count as a label.
 - One image expresses only one core action, structure, state, or metaphor.
 - Let structure read naturally — never write the structure type name on the image.
 
@@ -22,6 +23,7 @@ This is a **single-accent duotone**: black plus exactly one accent color.
 
 - **Black** — line art, the peanut, frames, structure, main text, the main objects.
 - **Warm orange** (the single accent) — the one thing the eye should follow: the main flow, the key arrow, the critical word, the result, the moment of emphasis.
+- **Watermark** — always black, never orange, never a second accent.
 
 Use the accent sparingly — one job per image. Never introduce a second or third color. If you are tempted to add a color, make it orange or make it black. (Default accent is warm orange; if the user asks for a different signature color, swap orange for that one color everywhere — still only one accent.)
 

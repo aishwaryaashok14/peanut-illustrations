@@ -11,6 +11,7 @@
 - Clean and sparse — the main subject is under ~60% of the canvas.
 - One image expresses only one core structure.
 - Labels are few, short, and readable English.
+- Final saved image includes the exact watermark `© peanut-illustrations-by-aish` in small black text at the bottom-right.
 - Exactly one accent color (warm orange by default), used only for the single point of emphasis.
 - No second or third color crept in.
 
@@ -26,6 +27,7 @@ If any of these appear, regenerate or do a local edit:
 - The background has paper texture, shadow, gradient, beige, or noise.
 - A realistic UI screenshot or techy interface.
 - Garbled text or unreadable labels.
+- Missing, garbled, oversized, orange, or model-generated watermark.
 - A second accent color appears.
 - It is too stiff, with no absurd metaphor.
 

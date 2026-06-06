@@ -1,6 +1,6 @@
 ---
 name: peanut-illustrations
-description: Turn a short prompt into one clean, hand-drawn concept illustration starring a deadpan peanut. Use when the user gives an idea, judgment, process, feeling, or metaphor as a short prompt and wants a single "peanut" illustration, concept sketch, explainer image, article figure, or visual for it. Default style is a deadpan in-shell peanut, black hand-drawn line art on white, one warm-orange accent, lots of whitespace, one idea per image — composed first, then generated.
+description: Turn a short prompt into one clean, hand-drawn concept illustration starring a deadpan peanut. Use when the user gives an idea, judgment, process, feeling, or metaphor as a short prompt and wants a single "peanut" illustration, concept sketch, explainer image, article figure, or visual for it. Default style is a deadpan in-shell peanut, black hand-drawn line art on white, one warm-orange accent, lots of whitespace, one idea per image, and the exact bottom-right watermark "© peanut-illustrations-by-aish" added after generation — composed first, then generated.
 ---
 
 # Peanut Illustrations
@@ -19,8 +19,9 @@ For each prompt, **think briefly out loud, then generate one image**. Before cal
 
 - **Metaphor** — the fresh low-tech metaphor you invented for this prompt.
 - **Peanut's action** — what the peanut is physically doing to drive the idea.
-- **Labels** — the 2-3 short English handwritten labels that will appear.
+- **Labels** — the short English handwritten labels that will appear (a few; at most 5-8).
 - **Composition** — where the peanut sits, the main object, and how the eye moves.
+- **Watermark** — reserve a quiet lower-right margin for the exact watermark `© peanut-illustrations-by-aish`; do not ask the image model to render this text.
 
 Then generate **one** image. One prompt → one composed image. Do not fan out into variations unless the user asks. If the user gives several prompts, make one image each.
 
@@ -55,6 +56,7 @@ If the user clearly asks to generate, do not stop for confirmation — use the b
 - lots of whitespace
 - the peanut as the subject performing the core action
 - a few short handwritten English labels
+- a quiet lower-right margin for the watermark
 - no PPT look, no commercial illustration, no childish cuteness, no complex architecture diagram, no top-left type-title
 
 Invent a fresh metaphor for every prompt. Do not reuse a metaphor from a previous image unless the user explicitly asks to reuse or remix one.
@@ -71,7 +73,17 @@ Run `references/qa-checklist.md`. Regenerate or do a local edit if:
 - the style drifts cute, childish, or stiff
 - a second accent color crept in, or the background is not clean white
 
-### 5. Save and report
+### 5. Add the watermark
+
+After choosing the final generated image, add the exact watermark locally before reporting it:
+
+```text
+© peanut-illustrations-by-aish
+```
+
+Use `scripts/add_watermark.py` so the text is exact and does not depend on the image model. Keep the watermark small, black, low-prominence, and tucked into the bottom-right quiet margin. It is not a concept label and does not count toward the label limit. Do not use the warm-orange accent for the watermark.
+
+### 6. Save and report
 
 If working inside a workspace, copy the final image to:
 
@@ -86,7 +98,7 @@ Name in order:
 02-topic-name.png
 ```
 
-Keep the original generated file. Do not overwrite existing assets unless the user asks to replace them.
+Keep the original generated file and the unwatermarked generated source. Do not overwrite existing assets unless the user asks to replace them.
 
 ## Output register
 

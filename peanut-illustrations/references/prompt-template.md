@@ -27,13 +27,16 @@ Suggested elements:
 {element 1} / {element 2} / {element 3}
 
 Handwritten English labels:
-{label 1} / {label 2} / {optional label 3}
+{label 1} / {label 2} / {label 3} / {optional 4} / {optional 5}  (a few; at most 5-8)
 
 Color use:
 Black for all line art and the peanut. One warm orange as the single accent, used only for the one most important thing (the main flow, the key arrow, the result, or the critical word). Use no other colors.
 
+Watermark handling:
+Leave a clean quiet margin in the bottom-right corner for an exact watermark that will be added locally after generation. Do not draw or write the watermark text in the generated image.
+
 Constraints:
-One image explains only one core structure. Keep the main subject around 40%-60% of the canvas. Preserve at least 35% blank white space. Use at most 5-8 short handwritten English labels. Do not write a title in the top-left corner. Do not write the structure type on the image. Do not make it a formal diagram, course slide, or dense explainer. Invent a fresh visual metaphor for this specific prompt. It should be clear but not instructional, interesting but not childish, strange but clean.
+One image explains only one core structure. Keep the main subject around 40%-60% of the canvas. Preserve at least 35% blank white space. Keep the bottom-right corner clean enough for a tiny watermark. Use at most 5-8 short handwritten English labels. Do not write a title in the top-left corner. Do not write the structure type on the image. Do not make it a formal diagram, course slide, or dense explainer. Invent a fresh visual metaphor for this specific prompt. It should be clear but not instructional, interesting but not childish, strange but clean.
 ```
 
 ## Image edit prompts
