@@ -1,78 +1,26 @@
 # Peanut Illustrations
 
-> Turn a short prompt — a judgment, a process, a state, a metaphor — into one white-background, hand-drawn, deadpan-but-clean concept illustration.
->
-> 16:9 · a deadpan peanut · black hand-drawn line · one warm-orange accent · Codex + Claude skill
+![Peanut Illustrations social preview](assets/social-preview.png)
 
-**Built by Aishwarya Ashok** — [X](https://x.com/aishashok14) · [LinkedIn](https://www.linkedin.com/in/aishwarya-ashok/)
+> Turn one short idea into a clean concept sketch with a tiny serious peanut.
 
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
+[![Claude Code skill](https://img.shields.io/badge/Claude_Code-skill-f28a2e)](#install)
+[![OpenAI Codex skill](https://img.shields.io/badge/OpenAI_Codex-skill-f28a2e)](#install)
+[![GitHub stars](https://img.shields.io/github/stars/aishwaryaashok14/peanut-illustrations?style=social)](https://github.com/aishwaryaashok14/peanut-illustrations/stargazers)
 
-## What this is
+**Peanut Illustrations** is an AI-agent skill for making white-background concept sketches with a tiny recurring character. Give it one idea in a sentence. It invents the metaphor, puts the peanut to work inside it, and generates one memorable 16:9 image.
 
-Peanut Illustrations is an AI-agent skill that helps an agent turn a **short prompt** into a single concept illustration. You give it one idea in a sentence; it invents a fitting visual metaphor, puts a small deadpan peanut to work inside it, and draws it.
+**Built by Aishwarya Ashok** - [X](https://x.com/aishashok14) · [LinkedIn](https://www.linkedin.com/in/aishwarya-ashok/)
 
-It is not a general illustration prompt, and it is not a PPT infographic template. The point is to take one judgment, process, structure, state, or metaphor and turn it into a memorable 16:9 hand-drawn explainer.
+```text
+Use $peanut-illustrations to draw a concept illustration for:
+"too many tools, not enough focus"
+```
 
-The recurring character is **the peanut**: a whole in-shell peanut with dot eyes, two thin legs, and a blank, serious face. The peanut is not a mascot or a sticker sitting in a corner — it is an absurd worker, calmly and gravely doing the job that explains the idea.
+## Gallery
 
-In one line: **don't just "add a picture" — draw the one key idea, with the peanut doing the work.**
-
----
-
-## Who it's for
-
-A good fit if you:
-
-- write posts, blogs, Notion docs, or methodology content and want concept figures
-- want to turn an abstract judgment into a concrete metaphor
-- want a look that is lighter, stranger, and more recognizable than a PPT infographic
-- use an AI agent for content and want a stable, reusable visual language
-
-Not a fit if you want:
-
-- commercial illustration, brand key visuals, or polished flat art
-- traditional PPT infographics, complex architecture, or flowcharts
-- children's cartoons, cute IP, or sticker-pack style
-- a dense, text-heavy explainer crammed into one image
-- strictly editable vector source files
-
----
-
-## What it produces
-
-By default:
-
-- one 16:9 horizontal concept illustration per prompt
-- a short "compose" note before each image: the metaphor, the peanut's action, the labels, and the composition
-- a final PNG saved to `assets/<prompt-slug>-illustrations/`
-
-By default not:
-
-- PPTX / PDF / Keynote
-- SVG / HTML / Canvas editable graphics
-- commercial posters or cover key visuals
-- text-heavy infographics
-
----
-
-## Visual style
-
-The skill uses a **single-accent duotone** style:
-
-- pure white background — no paper texture, beige, shadow, or gradient
-- black hand-drawn line art, thin lines, slight wobble
-- lots of whitespace — the subject is only about 40%-60% of the canvas
-- exactly **one** accent color (warm orange by default), used only for the single point of emphasis
-- one image expresses one core action, structure, state, or metaphor
-- the peanut must perform the core action, never just decorate
-- deadpan, inventive, clean — not childish, not cutesy
-
----
-
-## Examples
-
-Each image starts from one short prompt and becomes a single composed scene — the peanut performs the action, one warm-orange accent carries the eye, and there's plenty of white space.
+These are real outputs from the skill. Each starts as one short prompt, then becomes one composed scene with the peanut doing the core work.
 
 ### One idea, three formats
 
@@ -92,9 +40,7 @@ Each image starts from one short prompt and becomes a single composed scene — 
 
 ![A peanut sitting on a suitcase overstuffed with hobbies, overwhelmed](examples/images/03-too-many-hobbies.png)
 
-These are real outputs from the skill. Generate your own with the prompts in [examples/prompts.md](examples/prompts.md).
-
----
+More copy-pasteable prompts live in [examples/prompts.md](examples/prompts.md).
 
 ## Install
 
@@ -107,29 +53,39 @@ cd peanut-illustrations
 
 ### Claude Code
 
-Copy the skill into your Claude skills directory:
-
 ```bash
 mkdir -p "$HOME/.claude/skills"
 cp -R ./peanut-illustrations "$HOME/.claude/skills/"
 ```
 
-### OpenAI Codex
+Then invoke it:
 
-Copy the skill into your Codex skills directory:
+```text
+Use $peanut-illustrations to draw a concept illustration for:
+"shipping beats polishing"
+```
+
+### OpenAI Codex
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 cp -R ./peanut-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-Then invoke it (Codex shown; in Claude Code just reference the skill):
+Then invoke it:
 
 ```text
-Use $peanut-illustrations to draw a concept illustration for: "too many tools, not enough focus".
+Use $peanut-illustrations to draw a concept illustration for:
+"trust is built one piece of evidence at a time"
 ```
 
----
+## What makes it different
+
+- **One idea per image.** No dense infographics, dashboards, or PPT-style flowcharts.
+- **The peanut must do the work.** It is not a mascot pasted in the corner.
+- **Clean visual DNA.** Pure white background, black hand-drawn line, generous whitespace, and one warm-orange accent.
+- **Compose first, draw second.** The skill states the metaphor, labels, peanut action, and layout before generating.
+- **Watermark handled locally.** Final images use the exact `© peanut-illustrations-by-aish` watermark instead of asking the image model to spell it.
 
 ## How to use
 
@@ -138,7 +94,7 @@ Use $peanut-illustrations to draw a concept illustration for: "too many tools, n
 ```text
 Use $peanut-illustrations to draw a concept illustration for this idea:
 
-Trust isn't announced — it's laid down one piece of evidence at a time.
+Trust isn't announced - it's laid down one piece of evidence at a time.
 
 Keep it strange but clean, and the peanut must perform the core action.
 ```
@@ -154,38 +110,49 @@ Use $peanut-illustrations to draw one image each for these ideas:
 One composed image per idea, not a collage.
 ```
 
-### Edit an image (remove a stray title or text)
+### Edit an image
 
 ```text
-Use $peanut-illustrations to edit this image: remove the "Workflow" title in the
-top-left corner, keep everything else exactly the same.
+Use $peanut-illustrations to edit this image:
+remove the "Workflow" title in the top-left corner, keep everything else the same.
 ```
 
-More examples in [examples/prompts.md](examples/prompts.md).
+## What it produces
 
----
+By default:
+
+- one 16:9 horizontal concept illustration per prompt
+- a short compose note before each image
+- a final PNG saved to `assets/<prompt-slug>-illustrations/`
+
+By default not:
+
+- PPTX / PDF / Keynote
+- SVG / HTML / Canvas editable graphics
+- commercial posters or cover key visuals
+- text-heavy infographics
 
 ## How it works
 
 The skill's flow is:
 
-1. Read the short prompt and decide what kind of idea it is (judgment, process, contrast, state, metaphor).
-2. **Compose first:** state the freshly invented metaphor, what the peanut is doing, the 2-3 labels, and the composition.
-3. Generate **one** image with the image model, using the prompt template.
-4. Check against the QA checklist: white background, whitespace, peanut action, single accent, readable labels, not-a-PPT.
-5. Save the final PNG and report what it made and where.
+1. Read the short prompt and identify the idea type: judgment, process, contrast, state, or metaphor.
+2. Compose the scene: metaphor, peanut action, 2-3 labels, and layout.
+3. Generate one image with the image model.
+4. Check against the QA list: white background, whitespace, peanut action, single accent, readable labels, not-a-PPT.
+5. Add the final watermark locally and save the PNG.
 
-One prompt → one composed image. It never fans out into variations unless you ask.
+One prompt means one composed image. It only makes variations when you ask for them.
 
----
-
-## Directory structure
+## Repo structure
 
 ```text
 .
 ├── README.md
 ├── LICENSE
 ├── NOTICE.md
+├── assets/
+│   └── social-preview.png
 ├── examples/
 │   ├── images/
 │   └── prompts.md
@@ -193,59 +160,35 @@ One prompt → one composed image. It never fans out into variations unless you 
     ├── SKILL.md
     ├── agents/
     │   └── openai.yaml
-    ├── assets/
-    │   └── examples/
-    └── references/
-        ├── style-dna.md
-        ├── peanut-character.md
-        ├── composition-patterns.md
-        ├── prompt-template.md
-        └── qa-checklist.md
+    ├── references/
+    └── scripts/
 ```
 
-The part you install into an agent is the subdirectory:
+The installable agent skill is the `peanut-illustrations/` subdirectory. The root README, examples, license, and notice are GitHub-facing docs.
+
+## GitHub social preview
+
+Use [assets/social-preview.png](assets/social-preview.png) as the repository social preview image:
 
 ```text
-peanut-illustrations/
+GitHub repo -> Settings -> Social preview -> Upload image
 ```
 
-The root `README`, `LICENSE`, `NOTICE`, and `examples` are GitHub-facing docs.
-
----
+GitHub requires manual upload here; repo files alone do not set the preview card.
 
 ## Notes
 
 - Shorter labels are more stable; keep on-image text to a few short words.
-- One image = one core structure. Don't turn a prompt into a manual.
-- The peanut must perform the core action. If removing the peanut leaves the image fully intact, the peanut is too decorative.
-- AI image models can produce typos, hallucinated labels, style drift, or extra titles — always check after generating.
-- If text is badly garbled, reduce the number of labels and regenerate.
+- One image = one core structure. Do not turn a prompt into a manual.
+- If removing the peanut leaves the image intact, the peanut is too decorative.
+- AI image models can produce typos, hallucinated labels, style drift, or extra titles. Check the result before sharing.
+- If text is garbled, reduce the number of labels and regenerate.
 
----
+## Inspiration and credits
 
-## Built by
+This project is inspired by [ian-xiaohei-illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations) by Ian ([@ianneo_ai](https://x.com/ianneo_ai)), an MIT-licensed skill for hand-drawn Chinese article illustrations built around the "小黑 (Xiaohei)" character.
 
-**Aishwarya Ashok**
-
-- X/Twitter: [@aishashok14](https://x.com/aishashok14)
-- LinkedIn: [aishwarya-ashok](https://www.linkedin.com/in/aishwarya-ashok/)
-
----
-
-## Inspiration & credits
-
-This project is **inspired by** [ian-xiaohei-illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations) by Ian ([@ianneo_ai](https://x.com/ianneo_ai)) — an MIT-licensed skill for hand-drawn Chinese article illustrations built around the "小黑 (Xiaohei)" character.
-
-Peanut Illustrations is an independent reimagining. It keeps the original's essence — the discipline of one idea per image, generous whitespace, a deadpan recurring character that performs the action, and a QA-checked generation workflow — but changes the rest:
-
-- a different character (a deadpan peanut instead of Xiaohei)
-- a different look (single warm-orange accent duotone instead of the red/orange/blue system)
-- a different input model (a short prompt instead of parsing a full article)
-- English output instead of Chinese
-
-Thanks to Ian for the original idea and the clear workflow it modeled.
-
----
+Peanut Illustrations is an independent reimagining. It keeps the original's discipline of one idea per image, generous whitespace, a recurring deadpan character, and QA-checked generation workflow, but changes the character, style, language, and input model.
 
 ## License
 
