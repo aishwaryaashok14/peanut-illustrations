@@ -51,8 +51,8 @@ def main() -> None:
     parser.add_argument(
         "--scale",
         type=float,
-        default=0.028,
-        help="Font size as a fraction of image width (default: 0.028)",
+        default=0.016,
+        help="Font size as a fraction of image width (default: 0.016)",
     )
     parser.add_argument(
         "--opacity",
