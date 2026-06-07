@@ -210,9 +210,9 @@ GitHub requires manual upload here; repo files alone do not set the preview card
 
 ## Inspiration and credits
 
-This project is inspired by [ian-xiaohei-illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations) by Ian ([@ianneo_ai](https://x.com/ianneo_ai)), an MIT-licensed skill for hand-drawn Chinese article illustrations built around the "小黑 (Xiaohei)" character.
+This project is **adapted and translated from** [ian-xiaohei-illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations) by Ian ([@ianneo_ai](https://x.com/ianneo_ai)), an MIT-licensed skill for hand-drawn Chinese article illustrations built around the "小黑 (Xiaohei)" character.
 
-Peanut Illustrations is an independent reimagining. It keeps the original's discipline of one idea per image, generous whitespace, a recurring deadpan character, and QA-checked generation workflow, but changes the character, style, language, and input model.
+Portions are adapted and translated from the original. Peanut Illustrations changes the character (a deadpan peanut), reduces the palette to a single warm-orange accent, switches output to English, and uses a short-prompt single-image input model. No artwork from the original is redistributed; all images are independently generated. See [NOTICE.md](NOTICE.md) for the retained upstream copyright notice.
 
 ## License
 
